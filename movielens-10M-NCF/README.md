@@ -1,4 +1,4 @@
-# EXPERIMENTS of MF model in Movielens dataset
+# EXPERIMENTS of NCF model in Movielens dataset
 
 ## Performance of Generation Model
 To reproduce the result in Figure 4:``python main_conditionVAE_control.py --user test``
