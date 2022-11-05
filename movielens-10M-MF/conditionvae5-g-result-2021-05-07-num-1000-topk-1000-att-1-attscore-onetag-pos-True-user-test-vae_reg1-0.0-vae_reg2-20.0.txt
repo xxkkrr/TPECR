@@ -1,0 +1,17 @@
+EWC epochs:10 lr:2e-05 batch_size:128 sample_size:200 importance:10
+cvae epochs:15 lr:3e-05 batch_size:128 reg1:0.0 reg2:20.0 reg3:0.0 alpha:None reg_update_step:None iter_num:None
+pretrain vae path ./conditionvae_checkpoint/0415-1114/conditionvae5-epoch2899.pkl test_pos True user_mode test
+----------
+norm result:
+ap:[(-0.04858842123337869, 0.06975059762201846)]
+ndcg:[(-0.0492250556752324, 0.06049542958892941)]
+rercall:[(-0.04598288488739563, 0.05890668070341171)]
+rank:[(30.589, 166.57670929334628)]
+----------
+vae result:
+ap:[(-0.04304146882575676, 0.05217268162657499)]
+ndcg:[(-0.05048096613830119, 0.04794970948043236)]
+rercall:[(-0.04697723944803914, 0.04602913924132169)]
+rank:[(36.004, 182.07036547445057)]
+gt_loss (2.4534801636338233, 9.061584406298723)
+gt_mse_loss (0.003587368998254533, 0.0066966044088157504)
